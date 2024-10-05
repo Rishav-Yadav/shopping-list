@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header id="header">
+        <h1><i class="fa-solid fa-list-check fa-1x"></i> Shopping List</h1>
+      </header>
+      <section id="form">
+        <form>
+          <input type="text" id="item-input" placeholder="Enter Item" />
+          <button type="submit" class="btn dark-btn">
+            <i class="fa-solid fa-plus"></i> Add Item
+          </button>
+        </form>
+        <div class="filter">
+          <input type="text" id="search-box" placeholder="Search Item" />
+          <ul id="ul-items">
+            <!-- <li class="item">
+              Apple
+              <button class="remove">
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+            </li>
+            <li class="item">
+              Orange
+              <button>
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+            </li>
+            <li class="item">
+              Grapes
+              <button>
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+            </li> -->
+          </ul>
+          <button class="btn clr-btn">Clear All</button>
+        </div>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
