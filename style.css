@@ -21,28 +21,32 @@
 .dark-btn {
   background-color: black;
   color: white;
-  width: 25%;
+  width: 33%;
 }
 .clr-btn {
-  width: 100%;
+  width: 55%;
   padding: 1rem 2rem;
 }
 form {
+  margin-top: 1rem;
   display: flex;
   flex-direction: column;
   padding: 1rem 5rem 0.5rem 5rem;
 }
 input {
-  min-width: 300px;
+  min-width: 200px;
+  max-width: 300px;
   border: solid 1px #333;
   padding: 0.7rem 0.4rem;
-  margin-bottom: 0.68rem;
+  margin-bottom: 0.9rem;
 }
 
-.filter {
+/* .filter {
   padding: 0rem 5rem 0.5rem 5rem;
-}
+} */
 .filter input {
+  padding: 0.7rem 0.4rem;
+  width: 55.8%;
   border: 1px solid lightgray;
 }
 ul {
