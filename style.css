@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 .container {
+  min-width: 300px;
   max-width: 500px;
   margin: 30px auto;
   padding: 20px;
@@ -21,28 +22,29 @@
 .dark-btn {
   background-color: black;
   color: white;
-  width: 25%;
+  width: 35%;
 }
 .clr-btn {
-  width: 100%;
   padding: 1rem 2rem;
 }
 form {
+  margin-top: 1rem;
   display: flex;
   flex-direction: column;
-  padding: 1rem 5rem 0.5rem 5rem;
+  padding: 1rem;
 }
 input {
-  min-width: 300px;
   border: solid 1px #333;
   padding: 0.7rem 0.4rem;
-  margin-bottom: 0.68rem;
+  margin-bottom: 1.2rem;
 }
 
 .filter {
-  padding: 0rem 5rem 0.5rem 5rem;
+  padding: 0rem 1rem;
 }
 .filter input {
+  width: 100%;
+  padding: 0.7rem 0.4rem;
   border: 1px solid lightgray;
 }
 ul {
@@ -64,4 +66,9 @@ ul li button {
   justify-self: flex-end;
   cursor: pointer;
   color: red;
+}
+@media screen and (max-width: 768px) {
+  ul {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
