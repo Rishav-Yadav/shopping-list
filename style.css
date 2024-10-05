@@ -68,6 +68,9 @@ ul li button {
   color: red;
 }
 @media screen and (max-width: 768px) {
+  .container {
+    max-width: 300px;
+  }
   ul {
     grid-template-columns: repeat(1, 1fr);
   }
