@@ -3,12 +3,22 @@
   margin: 0;
   box-sizing: border-box;
 }
+body {
+  background-color: #222;
+  color: #f4f4f4;
+}
+h1 {
+  color: #f4f4f4;
+}
 .container {
   min-width: 300px;
   max-width: 500px;
   margin: 30px auto;
   padding: 20px;
   text-align: center;
+}
+.edit-mode {
+  color: #f6f6f6;
 }
 .btn {
   text-decoration: none;
@@ -20,12 +30,15 @@
   cursor: pointer;
 }
 .dark-btn {
-  background-color: black;
-  color: white;
-  width: 35%;
+  background-color: #333;
+  color: #f4f4f4;
+  width: 50%;
 }
 .clr-btn {
   padding: 1rem 2rem;
+  background-color: #333;
+  color: #f4f4f4;
+  width: 100%;
 }
 form {
   margin-top: 1rem;
@@ -34,9 +47,15 @@ form {
   padding: 1rem;
 }
 input {
-  border: solid 1px #333;
+  border: solid 1px #888;
+  background-color: #333;
+  color: #f4f4f4;
   padding: 0.7rem 0.4rem;
   margin-bottom: 1.2rem;
+}
+input:focus {
+  background-color: #333;
+  outline: 1px solid green;
 }
 
 .filter {
@@ -45,7 +64,11 @@ input {
 .filter input {
   width: 100%;
   padding: 0.7rem 0.4rem;
-  border: 1px solid lightgray;
+  border: 1px solid #888;
+}
+.filter input:focus {
+  background-color: #333;
+  outline: 1px solid green;
 }
 ul {
   list-style: none;
@@ -59,13 +82,15 @@ ul li {
   margin: 0.5rem 0.8rem 0.89rem 0rem;
   padding: 0.62rem 0.9rem;
   justify-content: space-between;
+  background-color: #333;
+  font-weight: 500;
 }
 ul li button {
   border: none;
-  background-color: white;
+  background-color: #333;
   justify-self: flex-end;
   cursor: pointer;
-  color: red;
+  color: white;
 }
 @media screen and (max-width: 768px) {
   .container {
